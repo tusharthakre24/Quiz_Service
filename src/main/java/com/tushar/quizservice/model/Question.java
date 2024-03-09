@@ -2,7 +2,7 @@ package com.tushar.quizservice.model;
 
 public class Question {
 
-    private Integer id;
+    private Integer question_Id;
     private String category;
     private String question;
     private String option1;
@@ -10,12 +10,12 @@ public class Question {
     private String option3;
     private String option4;
 
-    public Integer getId() {
-        return id;
+    public Integer getQuestion_Id() {
+        return question_Id;
     }
 
-    public void setId(Integer id) {
-        this.id = id;
+    public void setQuestion_Id(Integer question_Id) {
+        this.question_Id = question_Id;
     }
 
     public String getCategory() {

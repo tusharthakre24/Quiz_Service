@@ -16,12 +16,12 @@ public class QuizController {
     @Autowired
     QuizService quizService;
 
-    /*@GetMapping("getAllQuestionsForQuiz")
+    @GetMapping("getAllQuestionsForQuiz")
     public ResponseEntity<List<Question>> getAllQuestionsForQuiz(){
         return quizService.getAllQuestionsForQuiz();
     }
 
-    @GetMapping("getQuizQuestionsByCategory/{category}")
+   /* @GetMapping("getQuizQuestionsByCategory/{category}")
     public ResponseEntity<List<Question>> getQuizQuestionsByCategory(@PathVariable String category){
         return quizService.getQuizQuestionsByCategory(category);
     }
