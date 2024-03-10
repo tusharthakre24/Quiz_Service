@@ -21,16 +21,16 @@ public class QuizController {
         return quizService.getAllQuestionsForQuiz();
     }
 
-   /* @GetMapping("getQuizQuestionsByCategory/{category}")
+    @GetMapping("getQuizQuestionsByCategory/{category}")
     public ResponseEntity<List<Question>> getQuizQuestionsByCategory(@PathVariable String category){
         return quizService.getQuizQuestionsByCategory(category);
     }
 
     @GetMapping("getQuizQuestionsById/{id}")
-    public ResponseEntity<List<Question>> getQuizQuestionsById(@PathVariable Integer id){
+    public ResponseEntity<Question> getQuizQuestionsById(@PathVariable Integer id){
         return quizService.getQuizQuestionsById(id);
     }
-*/
+
     @GetMapping("getAllCategories")
     public ResponseEntity<List<Quiz>> getAllCategories(){
         return quizService.getAllCategories();

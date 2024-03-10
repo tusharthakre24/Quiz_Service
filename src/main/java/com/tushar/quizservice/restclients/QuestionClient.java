@@ -5,6 +5,7 @@ import org.springframework.cloud.openfeign.FeignClient;
 import org.springframework.http.ResponseEntity;
 import org.springframework.stereotype.Component;
 import org.springframework.web.bind.annotation.GetMapping;
+import org.springframework.web.bind.annotation.PathVariable;
 
 import java.util.List;
 
@@ -14,5 +15,10 @@ public interface QuestionClient {
 
     @GetMapping("/getAllQuestions")
     ResponseEntity<List<Question>> getAllQuestion();
-}
 
+    @GetMapping("/getQuestionByCategory/{category}")
+    ResponseEntity<List<Question>> getQuestionByCategory(@PathVariable String category);
+
+    @GetMapping("/getQuestionById/{id}")
+    ResponseEntity<Question> getQuestionById(@PathVariable Integer id);
+}
